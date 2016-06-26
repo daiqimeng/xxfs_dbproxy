@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <in>glib-ext.cpp</in>
+      <in>jiayuan_dbproxy.cpp</in>
+      <in>messages.cpp</in>
+      <in>mysql_wrapper.cpp</in>
+      <in>network-conn-pool.cpp</in>
+      <in>network-mysqld-proto.cpp</in>
+      <in>network-mysqld-proxy.cpp</in>
+      <in>network-mysqld-server.cpp</in>
+      <in>network-mysqld-table.cpp</in>
+      <in>network-mysqld.cpp</in>
+      <in>network-socket.cpp</in>
+      <in>partition.cpp</in>
+      <in>perf_monitor.cpp</in>
+      <in>resultset_merge.cpp</in>
+      <in>sql-parser.cpp</in>
+      <in>sql-tokenizer.c</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="重要文件"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-O2"/>
+        <element flagsID="1" commonFlags="-g -O2"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>jiayuan_dbproxy</executablePath>
+          <cTool>
+            <incDir>
+              <pElem>.</pElem>
+              <pElem>..</pElem>
+              <pElem>/usr/local/webserver/mysql/include</pElem>
+              <pElem>/usr/local/include</pElem>
+              <pElem>/usr/include/glib-2.0</pElem>
+              <pElem>/usr/lib/x86_64-linux-gnu/glib-2.0/include</pElem>
+              <pElem>/usr/include/lua5.1</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>HAVE_CONFIG_H</Elem>
+              <Elem>LIBDIR="/usr/local/share/jiayuan_dbproxy"</Elem>
+              <Elem>_FILE_OFFSET_BITS=64</Elem>
+              <Elem>_LARGEFILE_SOURCE</Elem>
+              <Elem>_LARGE_FILES</Elem>
+            </preprocessorList>
+          </cTool>
+          <ccTool>
+            <incDir>
+              <pElem>.</pElem>
+              <pElem>..</pElem>
+              <pElem>/usr/local/webserver/mysql/include</pElem>
+              <pElem>/usr/local/include</pElem>
+              <pElem>/usr/include/glib-2.0</pElem>
+              <pElem>/usr/lib/x86_64-linux-gnu/glib-2.0/include</pElem>
+              <pElem>/usr/include/lua5.1</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>HAVE_CONFIG_H</Elem>
+              <Elem>_FILE_OFFSET_BITS=64</Elem>
+              <Elem>_LARGEFILE_SOURCE</Elem>
+              <Elem>_LARGE_FILES</Elem>
+            </preprocessorList>
+          </ccTool>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="glib-ext.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="jiayuan_dbproxy.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="messages.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="mysql_wrapper.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="network-conn-pool.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="network-mysqld-proto.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="network-mysqld-proxy.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="network-mysqld-server.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="network-mysqld-table.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="network-mysqld.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="network-socket.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="partition.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="perf_monitor.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="resultset_merge.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="sql-parser.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="sql-tokenizer.c" ex="false" tool="0" flavor2="0">
+        <cTool flags="1">
+        </cTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

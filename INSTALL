@@ -3,5 +3,5 @@ make
 make install
 
 导入数据库db_mapping.sql
-更改配置jiayuan_dbproxy.conf,设置相关参数
-运行jiayuan_dbproxy -c spockproxy.conf
+更改配置xxfs_dbproxy.conf,设置相关参数
+运行xxfs_dbproxy -c spockproxy.conf

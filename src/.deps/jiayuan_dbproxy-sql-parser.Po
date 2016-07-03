@@ -1,4 +1,4 @@
-jiayuan_dbproxy-sql-parser.o: sql-parser.cpp /usr/include/stdc-predef.h \
+xxfs_dbproxy-sql-parser.o: sql-parser.cpp /usr/include/stdc-predef.h \
  sql-parser.h /usr/include/c++/4.8/string \
  /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h \

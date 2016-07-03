@@ -15,10 +15,10 @@
 
 
 
-pkgdatadir = $(datadir)/jiayuan_dbproxy
-pkgincludedir = $(includedir)/jiayuan_dbproxy
-pkglibdir = $(libdir)/jiayuan_dbproxy
-pkglibexecdir = $(libexecdir)/jiayuan_dbproxy
+pkgdatadir = $(datadir)/xxfs_dbproxy
+pkgincludedir = $(includedir)/xxfs_dbproxy
+pkglibdir = $(libdir)/xxfs_dbproxy
+pkglibexecdir = $(libexecdir)/xxfs_dbproxy
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -152,11 +152,11 @@ MYSQL_INCLUDE = -I/usr/local/webserver/mysql/include
 MYSQL_LIBS = -L/usr/local/webserver/mysql/lib -lmysqlclient -lpthread -lm -ldl
 MYSQL_TEST_BIN = /usr/local/webserver/mysql/bin/mysqltest
 OBJEXT = o
-PACKAGE = jiayuan_dbproxy
-PACKAGE_BUGREPORT = jiayuan_dbproxy-devel@lists.sourceforge.net
-PACKAGE_NAME = jiayuan_dbproxy
-PACKAGE_STRING = jiayuan_dbproxy 0.8.7
-PACKAGE_TARNAME = jiayuan_dbproxy
+PACKAGE = xxfs_dbproxy
+PACKAGE_BUGREPORT = xxfs_dbproxy-devel@lists.sourceforge.net
+PACKAGE_NAME = xxfs_dbproxy
+PACKAGE_STRING = xxfs_dbproxy 0.8.7
+PACKAGE_TARNAME = xxfs_dbproxy
 PACKAGE_URL = 
 PACKAGE_VERSION = 0.8.7
 PATH_SEPARATOR = :
@@ -168,10 +168,10 @@ SHELL = /bin/bash
 STRIP = 
 U = 
 VERSION = 0.8.7
-abs_builddir = /myreasearch/jiayuan_dbproxy
-abs_srcdir = /myreasearch/jiayuan_dbproxy
-abs_top_builddir = /myreasearch/jiayuan_dbproxy
-abs_top_srcdir = /myreasearch/jiayuan_dbproxy
+abs_builddir = /myreasearch/xxfs_dbproxy
+abs_srcdir = /myreasearch/xxfs_dbproxy
+abs_top_builddir = /myreasearch/xxfs_dbproxy
+abs_top_srcdir = /myreasearch/xxfs_dbproxy
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 am__include = include
@@ -199,7 +199,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /myreasearch/jiayuan_dbproxy/install-sh
+install_sh = ${SHELL} /myreasearch/xxfs_dbproxy/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale

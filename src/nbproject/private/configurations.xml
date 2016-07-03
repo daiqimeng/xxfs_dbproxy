@@ -6,7 +6,7 @@
       </df>
       <in>glib-ext.cpp</in>
       <in>glib-ext.h</in>
-      <in>jiayuan_dbproxy.cpp</in>
+      <in>xxfs_dbproxy.cpp</in>
       <in>messages.cpp</in>
       <in>messages.h</in>
       <in>mysql_wrapper.cpp</in>

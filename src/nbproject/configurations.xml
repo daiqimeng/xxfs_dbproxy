@@ -3,7 +3,7 @@
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <df root="." name="0">
       <in>glib-ext.cpp</in>
-      <in>jiayuan_dbproxy.cpp</in>
+      <in>xxfs_dbproxy.cpp</in>
       <in>messages.cpp</in>
       <in>mysql_wrapper.cpp</in>
       <in>network-conn-pool.cpp</in>
@@ -50,7 +50,7 @@
           <buildCommandWorkingDir>.</buildCommandWorkingDir>
           <buildCommand>${MAKE} -f Makefile</buildCommand>
           <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
-          <executablePath>jiayuan_dbproxy</executablePath>
+          <executablePath>xxfs_dbproxy</executablePath>
           <cTool>
             <incDir>
               <pElem>.</pElem>
@@ -63,7 +63,7 @@
             </incDir>
             <preprocessorList>
               <Elem>HAVE_CONFIG_H</Elem>
-              <Elem>LIBDIR="/usr/local/share/jiayuan_dbproxy"</Elem>
+              <Elem>LIBDIR="/usr/local/share/xxfs_dbproxy"</Elem>
               <Elem>_FILE_OFFSET_BITS=64</Elem>
               <Elem>_LARGEFILE_SOURCE</Elem>
               <Elem>_LARGE_FILES</Elem>
@@ -96,7 +96,7 @@
         <ccTool flags="0">
         </ccTool>
       </item>
-      <item path="jiayuan_dbproxy.cpp" ex="false" tool="1" flavor2="0">
+      <item path="xxfs_dbproxy.cpp" ex="false" tool="1" flavor2="0">
         <ccTool flags="0">
         </ccTool>
       </item>

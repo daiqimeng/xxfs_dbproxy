@@ -118,19 +118,19 @@
 /* #undef NO_MINUS_C_MINUS_O */
 
 /* Name of package */
-#define PACKAGE "jiayuan_dbproxy"
+#define PACKAGE "xxfs_dbproxy"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "jiayuan_dbproxy-devel@lists.sourceforge.net"
+#define PACKAGE_BUGREPORT "xxfs_dbproxy-devel@lists.sourceforge.net"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "jiayuan_dbproxy"
+#define PACKAGE_NAME "xxfs_dbproxy"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "jiayuan_dbproxy 0.8.7"
+#define PACKAGE_STRING "xxfs_dbproxy 0.8.7"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "jiayuan_dbproxy"
+#define PACKAGE_TARNAME "xxfs_dbproxy"
 
 /* Define to the version of this package. */
 #define PACKAGE_VERSION "0.8.7"

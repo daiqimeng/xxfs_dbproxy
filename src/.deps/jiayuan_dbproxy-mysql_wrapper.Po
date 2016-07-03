@@ -1,4 +1,4 @@
-jiayuan_dbproxy-mysql_wrapper.o: mysql_wrapper.cpp \
+xxfs_dbproxy-mysql_wrapper.o: mysql_wrapper.cpp \
  /usr/include/stdc-predef.h mysql_wrapper.h \
  /usr/local/webserver/mysql/include/mysql.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \

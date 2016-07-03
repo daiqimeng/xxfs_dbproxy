@@ -1,17 +1,17 @@
 #
-# Simple RPM spec file for jiayuan_dbproxy
+# Simple RPM spec file for xxfs_dbproxy
 # written by Lenz Grimmer <lenz@mysql.com>
 #
 %define prefix   /usr
 
 Summary: A partitioning proxy for the MySQL Client/Server protocol
-Name: jiayuan_dbproxy
-Version: @VERSION@
+Name: xxfs_dbproxy
+Version: 0.8.7
 Release: 0
 License: GPL
 Group: Applications/Networking
 Source: %{name}-%{version}.tar.gz
-URL: http://sourceforge.net/jiayuan_dbproxy
+URL: http://sourceforge.net/xxfs_dbproxy
 Buildroot: %{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires: mysql-devel glib2-devel libevent
 %if 0%{?suse_version} > 1010
@@ -22,8 +22,8 @@ BuildRequires:  lua-devel >= 5.1
 %endif
 
 %description
-jiayuan_dbproxy is a derivative of the MySql-Proxy project.  However this project
-greatly differs in the respect it is designed to act like a database in itself as opposed to just a proxy.  jiayuan_dbproxy allows database designers to partition
+xxfs_dbproxy is a derivative of the MySql-Proxy project.  However this project
+greatly differs in the respect it is designed to act like a database in itself as opposed to just a proxy.  xxfs_dbproxy allows database designers to partition
 data across multiple MySQL databases and allow simple (currently) commands to
 be sent to one or more databases and those results to be consolidated.  Instead
 of using LUA like MySQL-Proxy we have developed most of the code in 'C' and the

@@ -1,4 +1,4 @@
-jiayuan_dbproxy-network-mysqld.o: network-mysqld.cpp \
+xxfs_dbproxy-network-mysqld.o: network-mysqld.cpp \
  /usr/include/stdc-predef.h ../config.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \

@@ -402,7 +402,7 @@ static void init_backend_pool(network_mysqld *srv) {
 	}
 }
 
-#define GETTEXT_PACKAGE "jiayuan_dbproxy"
+#define GETTEXT_PACKAGE "xxfs_dbproxy"
 
 int main(int argc, char **argv) {
 	network_mysqld_table *table;
@@ -456,7 +456,7 @@ int main(int argc, char **argv) {
 		{ "version", 'V', 0, G_OPTION_ARG_NONE, NULL, "Show version", NULL},
 		{ "daemon", 'D', 0, G_OPTION_ARG_NONE, NULL, "Start in daemon-mode", NULL},
 		{ "pid-file", 0, 0, G_OPTION_ARG_STRING, NULL, "PID file in case we are started as daemon", "<file>"},
-		{ "config-file", 'c', 0, G_OPTION_ARG_STRING, NULL, "configuration file (default is ./jiayuan_dbproxy.conf)", "<file>"},
+		{ "config-file", 'c', 0, G_OPTION_ARG_STRING, NULL, "configuration file (default is ./xxfs_dbproxy.conf)", "<file>"},
 		{ "log-file", 'l', 0, G_OPTION_ARG_STRING, NULL, "log file (default is not set, using syslog)", "<file>"},
 		{ "max-conn-pool-size", 'm', 0, G_OPTION_ARG_STRING, NULL, "max backend connections for each shard(default: 50)", "<number>"},
 		{ "log-all-queries", 'L', 0, G_OPTION_ARG_NONE, NULL, "Log all queries(default: disabled)", NULL},
@@ -539,7 +539,7 @@ int main(int argc, char **argv) {
 	if (config_file && config_file[0] != '\0')
 		load_config_file(config_file);
 	else
-		load_config_file("jiayuan_dbproxy.conf");
+		load_config_file("xxfs_dbproxy.conf");
 
 	add_config_string("PARTITION_INFO_HOST", partition_info_host);
 	add_config_string("PARTITION_INFO_DB", partition_info_db);

@@ -1,4 +1,4 @@
-jiayuan_dbproxy-jiayuan_dbproxy.o: jiayuan_dbproxy.cpp \
+xxfs_dbproxy-xxfs_dbproxy.o: xxfs_dbproxy.cpp \
  /usr/include/stdc-predef.h ../config.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \

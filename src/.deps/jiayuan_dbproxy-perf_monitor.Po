@@ -1,4 +1,4 @@
-jiayuan_dbproxy-perf_monitor.o: perf_monitor.cpp \
+xxfs_dbproxy-perf_monitor.o: perf_monitor.cpp \
  /usr/include/stdc-predef.h perf_monitor.h \
  /usr/local/webserver/mysql/include/mysql.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \

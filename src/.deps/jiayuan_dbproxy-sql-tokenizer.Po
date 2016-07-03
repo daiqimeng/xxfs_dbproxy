@@ -1,4 +1,4 @@
-jiayuan_dbproxy-sql-tokenizer.o: sql-tokenizer.c \
+xxfs_dbproxy-sql-tokenizer.o: sql-tokenizer.c \
  /usr/include/stdc-predef.h /usr/include/stdio.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \

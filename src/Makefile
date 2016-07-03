@@ -17,10 +17,10 @@
 
 
 
-pkgdatadir = $(datadir)/jiayuan_dbproxy
-pkgincludedir = $(includedir)/jiayuan_dbproxy
-pkglibdir = $(libdir)/jiayuan_dbproxy
-pkglibexecdir = $(libexecdir)/jiayuan_dbproxy
+pkgdatadir = $(datadir)/xxfs_dbproxy
+pkgincludedir = $(includedir)/xxfs_dbproxy
+pkglibdir = $(libdir)/xxfs_dbproxy
+pkglibexecdir = $(libexecdir)/xxfs_dbproxy
 am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd
 install_sh_DATA = $(install_sh) -c -m 644
 install_sh_PROGRAM = $(install_sh) -c
@@ -36,7 +36,7 @@ POST_UNINSTALL = :
 build_triplet = x86_64-unknown-linux-gnu
 host_triplet = x86_64-unknown-linux-gnu
 target_triplet = x86_64-unknown-linux-gnu
-sbin_PROGRAMS = jiayuan_dbproxy$(EXEEXT)
+sbin_PROGRAMS = xxfs_dbproxy$(EXEEXT)
 subdir = src
 DIST_COMMON = $(noinst_HEADERS) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in sql-tokenizer.c
@@ -50,24 +50,24 @@ CONFIG_CLEAN_FILES =
 CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(sbindir)"
 PROGRAMS = $(sbin_PROGRAMS)
-am_jiayuan_dbproxy_OBJECTS = jiayuan_dbproxy-jiayuan_dbproxy.$(OBJEXT) \
-	jiayuan_dbproxy-network-mysqld.$(OBJEXT) \
-	jiayuan_dbproxy-network-mysqld-proto.$(OBJEXT) \
-	jiayuan_dbproxy-network-mysqld-proxy.$(OBJEXT) \
-	jiayuan_dbproxy-network-mysqld-server.$(OBJEXT) \
-	jiayuan_dbproxy-network-mysqld-table.$(OBJEXT) \
-	jiayuan_dbproxy-network-conn-pool.$(OBJEXT) \
-	jiayuan_dbproxy-network-socket.$(OBJEXT) \
-	jiayuan_dbproxy-sql-tokenizer.$(OBJEXT) \
-	jiayuan_dbproxy-glib-ext.$(OBJEXT) \
-	jiayuan_dbproxy-mysql_wrapper.$(OBJEXT) \
-	jiayuan_dbproxy-partition.$(OBJEXT) jiayuan_dbproxy-sql-parser.$(OBJEXT) \
-	jiayuan_dbproxy-perf_monitor.$(OBJEXT) \
-	jiayuan_dbproxy-messages.$(OBJEXT) \
-	jiayuan_dbproxy-resultset_merge.$(OBJEXT)
-jiayuan_dbproxy_OBJECTS = $(am_jiayuan_dbproxy_OBJECTS)
+am_xxfs_dbproxy_OBJECTS = xxfs_dbproxy-xxfs_dbproxy.$(OBJEXT) \
+	xxfs_dbproxy-network-mysqld.$(OBJEXT) \
+	xxfs_dbproxy-network-mysqld-proto.$(OBJEXT) \
+	xxfs_dbproxy-network-mysqld-proxy.$(OBJEXT) \
+	xxfs_dbproxy-network-mysqld-server.$(OBJEXT) \
+	xxfs_dbproxy-network-mysqld-table.$(OBJEXT) \
+	xxfs_dbproxy-network-conn-pool.$(OBJEXT) \
+	xxfs_dbproxy-network-socket.$(OBJEXT) \
+	xxfs_dbproxy-sql-tokenizer.$(OBJEXT) \
+	xxfs_dbproxy-glib-ext.$(OBJEXT) \
+	xxfs_dbproxy-mysql_wrapper.$(OBJEXT) \
+	xxfs_dbproxy-partition.$(OBJEXT) xxfs_dbproxy-sql-parser.$(OBJEXT) \
+	xxfs_dbproxy-perf_monitor.$(OBJEXT) \
+	xxfs_dbproxy-messages.$(OBJEXT) \
+	xxfs_dbproxy-resultset_merge.$(OBJEXT)
+xxfs_dbproxy_OBJECTS = $(am_xxfs_dbproxy_OBJECTS)
 am__DEPENDENCIES_1 =
-jiayuan_dbproxy_DEPENDENCIES = $(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
+xxfs_dbproxy_DEPENDENCIES = $(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1) \
 	$(am__DEPENDENCIES_1) $(am__DEPENDENCIES_1)
 DEFAULT_INCLUDES = -I. -I$(top_builddir)
 depcomp = $(SHELL) $(top_srcdir)/depcomp
@@ -85,8 +85,8 @@ CXXLINK = $(CXXLD) $(AM_CXXFLAGS) $(CXXFLAGS) $(AM_LDFLAGS) $(LDFLAGS) \
 am__skiplex = test -f $@ ||
 LEXCOMPILE = $(LEX) $(LFLAGS) $(AM_LFLAGS)
 YLWRAP = $(top_srcdir)/ylwrap
-SOURCES = $(jiayuan_dbproxy_SOURCES)
-DIST_SOURCES = $(jiayuan_dbproxy_SOURCES)
+SOURCES = $(xxfs_dbproxy_SOURCES)
+DIST_SOURCES = $(xxfs_dbproxy_SOURCES)
 HEADERS = $(noinst_HEADERS)
 ETAGS = etags
 CTAGS = ctags
@@ -140,11 +140,11 @@ MYSQL_INCLUDE = -I/usr/local/webserver/mysql/include
 MYSQL_LIBS = -L/usr/local/webserver/mysql/lib -lmysqlclient -lpthread -lm -ldl
 MYSQL_TEST_BIN = /usr/local/webserver/mysql/bin/mysqltest
 OBJEXT = o
-PACKAGE = jiayuan_dbproxy
-PACKAGE_BUGREPORT = jiayuan_dbproxy-devel@lists.sourceforge.net
-PACKAGE_NAME = jiayuan_dbproxy
-PACKAGE_STRING = jiayuan_dbproxy 0.8.7
-PACKAGE_TARNAME = jiayuan_dbproxy
+PACKAGE = xxfs_dbproxy
+PACKAGE_BUGREPORT = xxfs_dbproxy-devel@lists.sourceforge.net
+PACKAGE_NAME = xxfs_dbproxy
+PACKAGE_STRING = xxfs_dbproxy 0.8.7
+PACKAGE_TARNAME = xxfs_dbproxy
 PACKAGE_URL = 
 PACKAGE_VERSION = 0.8.7
 PATH_SEPARATOR = :
@@ -156,10 +156,10 @@ SHELL = /bin/bash
 STRIP = 
 U = 
 VERSION = 0.8.7
-abs_builddir = /myreasearch/jiayuan_dbproxy/src
-abs_srcdir = /myreasearch/jiayuan_dbproxy/src
-abs_top_builddir = /myreasearch/jiayuan_dbproxy
-abs_top_srcdir = /myreasearch/jiayuan_dbproxy
+abs_builddir = /myreasearch/xxfs_dbproxy/src
+abs_srcdir = /myreasearch/xxfs_dbproxy/src
+abs_top_builddir = /myreasearch/xxfs_dbproxy
+abs_top_srcdir = /myreasearch/xxfs_dbproxy
 ac_ct_CC = gcc
 ac_ct_CXX = g++
 am__include = include
@@ -187,7 +187,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /myreasearch/jiayuan_dbproxy/install-sh
+install_sh = ${SHELL} /myreasearch/xxfs_dbproxy/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -211,8 +211,8 @@ target_vendor = unknown
 top_build_prefix = ../
 top_builddir = ..
 top_srcdir = ..
-jiayuan_dbproxy_SOURCES = \
-	jiayuan_dbproxy.cpp \
+xxfs_dbproxy_SOURCES = \
+	xxfs_dbproxy.cpp \
 	network-mysqld.cpp \
 	network-mysqld-proto.cpp \
 	network-mysqld-proxy.cpp \
@@ -245,9 +245,9 @@ noinst_HEADERS = \
 	messages.h \
 	resultset_merge.h
 
-jiayuan_dbproxy_CPPFLAGS = $(MYSQL_INCLUDE) $(GLIB_CFLAGS) $(LUA_CFLAGS)  -Wall
-jiayuan_dbproxy_LDADD = $(ENABLE_LINK_STATIC) $(EVENT_LIBS) $(GLIB_LIBS) $(LUA_LIBS) $(DISABLE_LINK_STATIC) $(MYSQL_LIBS)
-jiayuan_dbproxy_CFLAGS = -DLIBDIR="\"$(pkgdatadir)\"" 
+xxfs_dbproxy_CPPFLAGS = $(MYSQL_INCLUDE) $(GLIB_CFLAGS) $(LUA_CFLAGS)  -Wall
+xxfs_dbproxy_LDADD = $(ENABLE_LINK_STATIC) $(EVENT_LIBS) $(GLIB_LIBS) $(LUA_LIBS) $(DISABLE_LINK_STATIC) $(MYSQL_LIBS)
+xxfs_dbproxy_CFLAGS = -DLIBDIR="\"$(pkgdatadir)\"" 
 
 # noinst_PROGRAMS=test-latency 
 # test_latency_SOURCES=test-latency.c
@@ -341,9 +341,9 @@ installcheck-sbinPROGRAMS: $(sbin_PROGRAMS)
 	    else echo "$$f does not support $$opt" 1>&2; bad=1; fi; \
 	  done; \
 	done; rm -f c$${pid}_.???; exit $$bad
-jiayuan_dbproxy$(EXEEXT): $(jiayuan_dbproxy_OBJECTS) $(jiayuan_dbproxy_DEPENDENCIES) 
-	@rm -f jiayuan_dbproxy$(EXEEXT)
-	$(CXXLINK) $(jiayuan_dbproxy_OBJECTS) $(jiayuan_dbproxy_LDADD) $(LIBS)
+xxfs_dbproxy$(EXEEXT): $(xxfs_dbproxy_OBJECTS) $(xxfs_dbproxy_DEPENDENCIES) 
+	@rm -f xxfs_dbproxy$(EXEEXT)
+	$(CXXLINK) $(xxfs_dbproxy_OBJECTS) $(xxfs_dbproxy_LDADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -351,22 +351,22 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-include ./$(DEPDIR)/jiayuan_dbproxy-glib-ext.Po
-include ./$(DEPDIR)/jiayuan_dbproxy-messages.Po
-include ./$(DEPDIR)/jiayuan_dbproxy-mysql_wrapper.Po
-include ./$(DEPDIR)/jiayuan_dbproxy-network-conn-pool.Po
-include ./$(DEPDIR)/jiayuan_dbproxy-network-mysqld-proto.Po
-include ./$(DEPDIR)/jiayuan_dbproxy-network-mysqld-proxy.Po
-include ./$(DEPDIR)/jiayuan_dbproxy-network-mysqld-server.Po
-include ./$(DEPDIR)/jiayuan_dbproxy-network-mysqld-table.Po
-include ./$(DEPDIR)/jiayuan_dbproxy-network-mysqld.Po
-include ./$(DEPDIR)/jiayuan_dbproxy-network-socket.Po
-include ./$(DEPDIR)/jiayuan_dbproxy-partition.Po
-include ./$(DEPDIR)/jiayuan_dbproxy-perf_monitor.Po
-include ./$(DEPDIR)/jiayuan_dbproxy-resultset_merge.Po
-include ./$(DEPDIR)/jiayuan_dbproxy-jiayuan_dbproxy.Po
-include ./$(DEPDIR)/jiayuan_dbproxy-sql-parser.Po
-include ./$(DEPDIR)/jiayuan_dbproxy-sql-tokenizer.Po
+include ./$(DEPDIR)/xxfs_dbproxy-glib-ext.Po
+include ./$(DEPDIR)/xxfs_dbproxy-messages.Po
+include ./$(DEPDIR)/xxfs_dbproxy-mysql_wrapper.Po
+include ./$(DEPDIR)/xxfs_dbproxy-network-conn-pool.Po
+include ./$(DEPDIR)/xxfs_dbproxy-network-mysqld-proto.Po
+include ./$(DEPDIR)/xxfs_dbproxy-network-mysqld-proxy.Po
+include ./$(DEPDIR)/xxfs_dbproxy-network-mysqld-server.Po
+include ./$(DEPDIR)/xxfs_dbproxy-network-mysqld-table.Po
+include ./$(DEPDIR)/xxfs_dbproxy-network-mysqld.Po
+include ./$(DEPDIR)/xxfs_dbproxy-network-socket.Po
+include ./$(DEPDIR)/xxfs_dbproxy-partition.Po
+include ./$(DEPDIR)/xxfs_dbproxy-perf_monitor.Po
+include ./$(DEPDIR)/xxfs_dbproxy-resultset_merge.Po
+include ./$(DEPDIR)/xxfs_dbproxy-xxfs_dbproxy.Po
+include ./$(DEPDIR)/xxfs_dbproxy-sql-parser.Po
+include ./$(DEPDIR)/xxfs_dbproxy-sql-tokenizer.Po
 
 .c.o:
 	$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
@@ -382,19 +382,19 @@ include ./$(DEPDIR)/jiayuan_dbproxy-sql-tokenizer.Po
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(COMPILE) -c `$(CYGPATH_W) '$<'`
 
-jiayuan_dbproxy-sql-tokenizer.o: sql-tokenizer.c
-	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(jiayuan_dbproxy_CFLAGS) $(CFLAGS) -MT jiayuan_dbproxy-sql-tokenizer.o -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-sql-tokenizer.Tpo -c -o jiayuan_dbproxy-sql-tokenizer.o `test -f 'sql-tokenizer.c' || echo '$(srcdir)/'`sql-tokenizer.c
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-sql-tokenizer.Tpo $(DEPDIR)/jiayuan_dbproxy-sql-tokenizer.Po
-#	source='sql-tokenizer.c' object='jiayuan_dbproxy-sql-tokenizer.o' libtool=no \
+xxfs_dbproxy-sql-tokenizer.o: sql-tokenizer.c
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(xxfs_dbproxy_CFLAGS) $(CFLAGS) -MT xxfs_dbproxy-sql-tokenizer.o -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-sql-tokenizer.Tpo -c -o xxfs_dbproxy-sql-tokenizer.o `test -f 'sql-tokenizer.c' || echo '$(srcdir)/'`sql-tokenizer.c
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-sql-tokenizer.Tpo $(DEPDIR)/xxfs_dbproxy-sql-tokenizer.Po
+#	source='sql-tokenizer.c' object='xxfs_dbproxy-sql-tokenizer.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(jiayuan_dbproxy_CFLAGS) $(CFLAGS) -c -o jiayuan_dbproxy-sql-tokenizer.o `test -f 'sql-tokenizer.c' || echo '$(srcdir)/'`sql-tokenizer.c
+#	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(xxfs_dbproxy_CFLAGS) $(CFLAGS) -c -o xxfs_dbproxy-sql-tokenizer.o `test -f 'sql-tokenizer.c' || echo '$(srcdir)/'`sql-tokenizer.c
 
-jiayuan_dbproxy-sql-tokenizer.obj: sql-tokenizer.c
-	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(jiayuan_dbproxy_CFLAGS) $(CFLAGS) -MT jiayuan_dbproxy-sql-tokenizer.obj -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-sql-tokenizer.Tpo -c -o jiayuan_dbproxy-sql-tokenizer.obj `if test -f 'sql-tokenizer.c'; then $(CYGPATH_W) 'sql-tokenizer.c'; else $(CYGPATH_W) '$(srcdir)/sql-tokenizer.c'; fi`
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-sql-tokenizer.Tpo $(DEPDIR)/jiayuan_dbproxy-sql-tokenizer.Po
-#	source='sql-tokenizer.c' object='jiayuan_dbproxy-sql-tokenizer.obj' libtool=no \
+xxfs_dbproxy-sql-tokenizer.obj: sql-tokenizer.c
+	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(xxfs_dbproxy_CFLAGS) $(CFLAGS) -MT xxfs_dbproxy-sql-tokenizer.obj -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-sql-tokenizer.Tpo -c -o xxfs_dbproxy-sql-tokenizer.obj `if test -f 'sql-tokenizer.c'; then $(CYGPATH_W) 'sql-tokenizer.c'; else $(CYGPATH_W) '$(srcdir)/sql-tokenizer.c'; fi`
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-sql-tokenizer.Tpo $(DEPDIR)/xxfs_dbproxy-sql-tokenizer.Po
+#	source='sql-tokenizer.c' object='xxfs_dbproxy-sql-tokenizer.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
-#	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(jiayuan_dbproxy_CFLAGS) $(CFLAGS) -c -o jiayuan_dbproxy-sql-tokenizer.obj `if test -f 'sql-tokenizer.c'; then $(CYGPATH_W) 'sql-tokenizer.c'; else $(CYGPATH_W) '$(srcdir)/sql-tokenizer.c'; fi`
+#	$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(xxfs_dbproxy_CFLAGS) $(CFLAGS) -c -o xxfs_dbproxy-sql-tokenizer.obj `if test -f 'sql-tokenizer.c'; then $(CYGPATH_W) 'sql-tokenizer.c'; else $(CYGPATH_W) '$(srcdir)/sql-tokenizer.c'; fi`
 
 .cpp.o:
 	$(CXXCOMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<
@@ -410,215 +410,215 @@ jiayuan_dbproxy-sql-tokenizer.obj: sql-tokenizer.c
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
 #	$(CXXCOMPILE) -c -o $@ `$(CYGPATH_W) '$<'`
 
-jiayuan_dbproxy-jiayuan_dbproxy.o: jiayuan_dbproxy.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-jiayuan_dbproxy.o -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-jiayuan_dbproxy.Tpo -c -o jiayuan_dbproxy-jiayuan_dbproxy.o `test -f 'jiayuan_dbproxy.cpp' || echo '$(srcdir)/'`jiayuan_dbproxy.cpp
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-jiayuan_dbproxy.Tpo $(DEPDIR)/jiayuan_dbproxy-jiayuan_dbproxy.Po
-#	source='jiayuan_dbproxy.cpp' object='jiayuan_dbproxy-jiayuan_dbproxy.o' libtool=no \
+xxfs_dbproxy-xxfs_dbproxy.o: xxfs_dbproxy.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-xxfs_dbproxy.o -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-xxfs_dbproxy.Tpo -c -o xxfs_dbproxy-xxfs_dbproxy.o `test -f 'xxfs_dbproxy.cpp' || echo '$(srcdir)/'`xxfs_dbproxy.cpp
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-xxfs_dbproxy.Tpo $(DEPDIR)/xxfs_dbproxy-xxfs_dbproxy.Po
+#	source='xxfs_dbproxy.cpp' object='xxfs_dbproxy-xxfs_dbproxy.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-jiayuan_dbproxy.o `test -f 'jiayuan_dbproxy.cpp' || echo '$(srcdir)/'`jiayuan_dbproxy.cpp
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-xxfs_dbproxy.o `test -f 'xxfs_dbproxy.cpp' || echo '$(srcdir)/'`xxfs_dbproxy.cpp
 
-jiayuan_dbproxy-jiayuan_dbproxy.obj: jiayuan_dbproxy.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-jiayuan_dbproxy.obj -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-jiayuan_dbproxy.Tpo -c -o jiayuan_dbproxy-jiayuan_dbproxy.obj `if test -f 'jiayuan_dbproxy.cpp'; then $(CYGPATH_W) 'jiayuan_dbproxy.cpp'; else $(CYGPATH_W) '$(srcdir)/jiayuan_dbproxy.cpp'; fi`
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-jiayuan_dbproxy.Tpo $(DEPDIR)/jiayuan_dbproxy-jiayuan_dbproxy.Po
-#	source='jiayuan_dbproxy.cpp' object='jiayuan_dbproxy-jiayuan_dbproxy.obj' libtool=no \
+xxfs_dbproxy-xxfs_dbproxy.obj: xxfs_dbproxy.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-xxfs_dbproxy.obj -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-xxfs_dbproxy.Tpo -c -o xxfs_dbproxy-xxfs_dbproxy.obj `if test -f 'xxfs_dbproxy.cpp'; then $(CYGPATH_W) 'xxfs_dbproxy.cpp'; else $(CYGPATH_W) '$(srcdir)/xxfs_dbproxy.cpp'; fi`
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-xxfs_dbproxy.Tpo $(DEPDIR)/xxfs_dbproxy-xxfs_dbproxy.Po
+#	source='xxfs_dbproxy.cpp' object='xxfs_dbproxy-xxfs_dbproxy.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-jiayuan_dbproxy.obj `if test -f 'jiayuan_dbproxy.cpp'; then $(CYGPATH_W) 'jiayuan_dbproxy.cpp'; else $(CYGPATH_W) '$(srcdir)/jiayuan_dbproxy.cpp'; fi`
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-xxfs_dbproxy.obj `if test -f 'xxfs_dbproxy.cpp'; then $(CYGPATH_W) 'xxfs_dbproxy.cpp'; else $(CYGPATH_W) '$(srcdir)/xxfs_dbproxy.cpp'; fi`
 
-jiayuan_dbproxy-network-mysqld.o: network-mysqld.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-network-mysqld.o -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-network-mysqld.Tpo -c -o jiayuan_dbproxy-network-mysqld.o `test -f 'network-mysqld.cpp' || echo '$(srcdir)/'`network-mysqld.cpp
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-network-mysqld.Tpo $(DEPDIR)/jiayuan_dbproxy-network-mysqld.Po
-#	source='network-mysqld.cpp' object='jiayuan_dbproxy-network-mysqld.o' libtool=no \
+xxfs_dbproxy-network-mysqld.o: network-mysqld.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-network-mysqld.o -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-network-mysqld.Tpo -c -o xxfs_dbproxy-network-mysqld.o `test -f 'network-mysqld.cpp' || echo '$(srcdir)/'`network-mysqld.cpp
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-network-mysqld.Tpo $(DEPDIR)/xxfs_dbproxy-network-mysqld.Po
+#	source='network-mysqld.cpp' object='xxfs_dbproxy-network-mysqld.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-network-mysqld.o `test -f 'network-mysqld.cpp' || echo '$(srcdir)/'`network-mysqld.cpp
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-network-mysqld.o `test -f 'network-mysqld.cpp' || echo '$(srcdir)/'`network-mysqld.cpp
 
-jiayuan_dbproxy-network-mysqld.obj: network-mysqld.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-network-mysqld.obj -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-network-mysqld.Tpo -c -o jiayuan_dbproxy-network-mysqld.obj `if test -f 'network-mysqld.cpp'; then $(CYGPATH_W) 'network-mysqld.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld.cpp'; fi`
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-network-mysqld.Tpo $(DEPDIR)/jiayuan_dbproxy-network-mysqld.Po
-#	source='network-mysqld.cpp' object='jiayuan_dbproxy-network-mysqld.obj' libtool=no \
+xxfs_dbproxy-network-mysqld.obj: network-mysqld.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-network-mysqld.obj -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-network-mysqld.Tpo -c -o xxfs_dbproxy-network-mysqld.obj `if test -f 'network-mysqld.cpp'; then $(CYGPATH_W) 'network-mysqld.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld.cpp'; fi`
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-network-mysqld.Tpo $(DEPDIR)/xxfs_dbproxy-network-mysqld.Po
+#	source='network-mysqld.cpp' object='xxfs_dbproxy-network-mysqld.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-network-mysqld.obj `if test -f 'network-mysqld.cpp'; then $(CYGPATH_W) 'network-mysqld.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld.cpp'; fi`
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-network-mysqld.obj `if test -f 'network-mysqld.cpp'; then $(CYGPATH_W) 'network-mysqld.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld.cpp'; fi`
 
-jiayuan_dbproxy-network-mysqld-proto.o: network-mysqld-proto.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-network-mysqld-proto.o -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-network-mysqld-proto.Tpo -c -o jiayuan_dbproxy-network-mysqld-proto.o `test -f 'network-mysqld-proto.cpp' || echo '$(srcdir)/'`network-mysqld-proto.cpp
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-network-mysqld-proto.Tpo $(DEPDIR)/jiayuan_dbproxy-network-mysqld-proto.Po
-#	source='network-mysqld-proto.cpp' object='jiayuan_dbproxy-network-mysqld-proto.o' libtool=no \
+xxfs_dbproxy-network-mysqld-proto.o: network-mysqld-proto.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-network-mysqld-proto.o -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-network-mysqld-proto.Tpo -c -o xxfs_dbproxy-network-mysqld-proto.o `test -f 'network-mysqld-proto.cpp' || echo '$(srcdir)/'`network-mysqld-proto.cpp
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-network-mysqld-proto.Tpo $(DEPDIR)/xxfs_dbproxy-network-mysqld-proto.Po
+#	source='network-mysqld-proto.cpp' object='xxfs_dbproxy-network-mysqld-proto.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-network-mysqld-proto.o `test -f 'network-mysqld-proto.cpp' || echo '$(srcdir)/'`network-mysqld-proto.cpp
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-network-mysqld-proto.o `test -f 'network-mysqld-proto.cpp' || echo '$(srcdir)/'`network-mysqld-proto.cpp
 
-jiayuan_dbproxy-network-mysqld-proto.obj: network-mysqld-proto.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-network-mysqld-proto.obj -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-network-mysqld-proto.Tpo -c -o jiayuan_dbproxy-network-mysqld-proto.obj `if test -f 'network-mysqld-proto.cpp'; then $(CYGPATH_W) 'network-mysqld-proto.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld-proto.cpp'; fi`
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-network-mysqld-proto.Tpo $(DEPDIR)/jiayuan_dbproxy-network-mysqld-proto.Po
-#	source='network-mysqld-proto.cpp' object='jiayuan_dbproxy-network-mysqld-proto.obj' libtool=no \
+xxfs_dbproxy-network-mysqld-proto.obj: network-mysqld-proto.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-network-mysqld-proto.obj -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-network-mysqld-proto.Tpo -c -o xxfs_dbproxy-network-mysqld-proto.obj `if test -f 'network-mysqld-proto.cpp'; then $(CYGPATH_W) 'network-mysqld-proto.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld-proto.cpp'; fi`
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-network-mysqld-proto.Tpo $(DEPDIR)/xxfs_dbproxy-network-mysqld-proto.Po
+#	source='network-mysqld-proto.cpp' object='xxfs_dbproxy-network-mysqld-proto.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-network-mysqld-proto.obj `if test -f 'network-mysqld-proto.cpp'; then $(CYGPATH_W) 'network-mysqld-proto.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld-proto.cpp'; fi`
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-network-mysqld-proto.obj `if test -f 'network-mysqld-proto.cpp'; then $(CYGPATH_W) 'network-mysqld-proto.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld-proto.cpp'; fi`
 
-jiayuan_dbproxy-network-mysqld-proxy.o: network-mysqld-proxy.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-network-mysqld-proxy.o -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-network-mysqld-proxy.Tpo -c -o jiayuan_dbproxy-network-mysqld-proxy.o `test -f 'network-mysqld-proxy.cpp' || echo '$(srcdir)/'`network-mysqld-proxy.cpp
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-network-mysqld-proxy.Tpo $(DEPDIR)/jiayuan_dbproxy-network-mysqld-proxy.Po
-#	source='network-mysqld-proxy.cpp' object='jiayuan_dbproxy-network-mysqld-proxy.o' libtool=no \
+xxfs_dbproxy-network-mysqld-proxy.o: network-mysqld-proxy.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-network-mysqld-proxy.o -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-network-mysqld-proxy.Tpo -c -o xxfs_dbproxy-network-mysqld-proxy.o `test -f 'network-mysqld-proxy.cpp' || echo '$(srcdir)/'`network-mysqld-proxy.cpp
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-network-mysqld-proxy.Tpo $(DEPDIR)/xxfs_dbproxy-network-mysqld-proxy.Po
+#	source='network-mysqld-proxy.cpp' object='xxfs_dbproxy-network-mysqld-proxy.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-network-mysqld-proxy.o `test -f 'network-mysqld-proxy.cpp' || echo '$(srcdir)/'`network-mysqld-proxy.cpp
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-network-mysqld-proxy.o `test -f 'network-mysqld-proxy.cpp' || echo '$(srcdir)/'`network-mysqld-proxy.cpp
 
-jiayuan_dbproxy-network-mysqld-proxy.obj: network-mysqld-proxy.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-network-mysqld-proxy.obj -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-network-mysqld-proxy.Tpo -c -o jiayuan_dbproxy-network-mysqld-proxy.obj `if test -f 'network-mysqld-proxy.cpp'; then $(CYGPATH_W) 'network-mysqld-proxy.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld-proxy.cpp'; fi`
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-network-mysqld-proxy.Tpo $(DEPDIR)/jiayuan_dbproxy-network-mysqld-proxy.Po
-#	source='network-mysqld-proxy.cpp' object='jiayuan_dbproxy-network-mysqld-proxy.obj' libtool=no \
+xxfs_dbproxy-network-mysqld-proxy.obj: network-mysqld-proxy.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-network-mysqld-proxy.obj -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-network-mysqld-proxy.Tpo -c -o xxfs_dbproxy-network-mysqld-proxy.obj `if test -f 'network-mysqld-proxy.cpp'; then $(CYGPATH_W) 'network-mysqld-proxy.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld-proxy.cpp'; fi`
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-network-mysqld-proxy.Tpo $(DEPDIR)/xxfs_dbproxy-network-mysqld-proxy.Po
+#	source='network-mysqld-proxy.cpp' object='xxfs_dbproxy-network-mysqld-proxy.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-network-mysqld-proxy.obj `if test -f 'network-mysqld-proxy.cpp'; then $(CYGPATH_W) 'network-mysqld-proxy.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld-proxy.cpp'; fi`
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-network-mysqld-proxy.obj `if test -f 'network-mysqld-proxy.cpp'; then $(CYGPATH_W) 'network-mysqld-proxy.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld-proxy.cpp'; fi`
 
-jiayuan_dbproxy-network-mysqld-server.o: network-mysqld-server.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-network-mysqld-server.o -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-network-mysqld-server.Tpo -c -o jiayuan_dbproxy-network-mysqld-server.o `test -f 'network-mysqld-server.cpp' || echo '$(srcdir)/'`network-mysqld-server.cpp
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-network-mysqld-server.Tpo $(DEPDIR)/jiayuan_dbproxy-network-mysqld-server.Po
-#	source='network-mysqld-server.cpp' object='jiayuan_dbproxy-network-mysqld-server.o' libtool=no \
+xxfs_dbproxy-network-mysqld-server.o: network-mysqld-server.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-network-mysqld-server.o -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-network-mysqld-server.Tpo -c -o xxfs_dbproxy-network-mysqld-server.o `test -f 'network-mysqld-server.cpp' || echo '$(srcdir)/'`network-mysqld-server.cpp
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-network-mysqld-server.Tpo $(DEPDIR)/xxfs_dbproxy-network-mysqld-server.Po
+#	source='network-mysqld-server.cpp' object='xxfs_dbproxy-network-mysqld-server.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-network-mysqld-server.o `test -f 'network-mysqld-server.cpp' || echo '$(srcdir)/'`network-mysqld-server.cpp
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-network-mysqld-server.o `test -f 'network-mysqld-server.cpp' || echo '$(srcdir)/'`network-mysqld-server.cpp
 
-jiayuan_dbproxy-network-mysqld-server.obj: network-mysqld-server.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-network-mysqld-server.obj -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-network-mysqld-server.Tpo -c -o jiayuan_dbproxy-network-mysqld-server.obj `if test -f 'network-mysqld-server.cpp'; then $(CYGPATH_W) 'network-mysqld-server.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld-server.cpp'; fi`
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-network-mysqld-server.Tpo $(DEPDIR)/jiayuan_dbproxy-network-mysqld-server.Po
-#	source='network-mysqld-server.cpp' object='jiayuan_dbproxy-network-mysqld-server.obj' libtool=no \
+xxfs_dbproxy-network-mysqld-server.obj: network-mysqld-server.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-network-mysqld-server.obj -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-network-mysqld-server.Tpo -c -o xxfs_dbproxy-network-mysqld-server.obj `if test -f 'network-mysqld-server.cpp'; then $(CYGPATH_W) 'network-mysqld-server.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld-server.cpp'; fi`
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-network-mysqld-server.Tpo $(DEPDIR)/xxfs_dbproxy-network-mysqld-server.Po
+#	source='network-mysqld-server.cpp' object='xxfs_dbproxy-network-mysqld-server.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-network-mysqld-server.obj `if test -f 'network-mysqld-server.cpp'; then $(CYGPATH_W) 'network-mysqld-server.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld-server.cpp'; fi`
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-network-mysqld-server.obj `if test -f 'network-mysqld-server.cpp'; then $(CYGPATH_W) 'network-mysqld-server.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld-server.cpp'; fi`
 
-jiayuan_dbproxy-network-mysqld-table.o: network-mysqld-table.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-network-mysqld-table.o -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-network-mysqld-table.Tpo -c -o jiayuan_dbproxy-network-mysqld-table.o `test -f 'network-mysqld-table.cpp' || echo '$(srcdir)/'`network-mysqld-table.cpp
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-network-mysqld-table.Tpo $(DEPDIR)/jiayuan_dbproxy-network-mysqld-table.Po
-#	source='network-mysqld-table.cpp' object='jiayuan_dbproxy-network-mysqld-table.o' libtool=no \
+xxfs_dbproxy-network-mysqld-table.o: network-mysqld-table.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-network-mysqld-table.o -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-network-mysqld-table.Tpo -c -o xxfs_dbproxy-network-mysqld-table.o `test -f 'network-mysqld-table.cpp' || echo '$(srcdir)/'`network-mysqld-table.cpp
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-network-mysqld-table.Tpo $(DEPDIR)/xxfs_dbproxy-network-mysqld-table.Po
+#	source='network-mysqld-table.cpp' object='xxfs_dbproxy-network-mysqld-table.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-network-mysqld-table.o `test -f 'network-mysqld-table.cpp' || echo '$(srcdir)/'`network-mysqld-table.cpp
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-network-mysqld-table.o `test -f 'network-mysqld-table.cpp' || echo '$(srcdir)/'`network-mysqld-table.cpp
 
-jiayuan_dbproxy-network-mysqld-table.obj: network-mysqld-table.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-network-mysqld-table.obj -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-network-mysqld-table.Tpo -c -o jiayuan_dbproxy-network-mysqld-table.obj `if test -f 'network-mysqld-table.cpp'; then $(CYGPATH_W) 'network-mysqld-table.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld-table.cpp'; fi`
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-network-mysqld-table.Tpo $(DEPDIR)/jiayuan_dbproxy-network-mysqld-table.Po
-#	source='network-mysqld-table.cpp' object='jiayuan_dbproxy-network-mysqld-table.obj' libtool=no \
+xxfs_dbproxy-network-mysqld-table.obj: network-mysqld-table.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-network-mysqld-table.obj -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-network-mysqld-table.Tpo -c -o xxfs_dbproxy-network-mysqld-table.obj `if test -f 'network-mysqld-table.cpp'; then $(CYGPATH_W) 'network-mysqld-table.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld-table.cpp'; fi`
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-network-mysqld-table.Tpo $(DEPDIR)/xxfs_dbproxy-network-mysqld-table.Po
+#	source='network-mysqld-table.cpp' object='xxfs_dbproxy-network-mysqld-table.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-network-mysqld-table.obj `if test -f 'network-mysqld-table.cpp'; then $(CYGPATH_W) 'network-mysqld-table.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld-table.cpp'; fi`
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-network-mysqld-table.obj `if test -f 'network-mysqld-table.cpp'; then $(CYGPATH_W) 'network-mysqld-table.cpp'; else $(CYGPATH_W) '$(srcdir)/network-mysqld-table.cpp'; fi`
 
-jiayuan_dbproxy-network-conn-pool.o: network-conn-pool.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-network-conn-pool.o -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-network-conn-pool.Tpo -c -o jiayuan_dbproxy-network-conn-pool.o `test -f 'network-conn-pool.cpp' || echo '$(srcdir)/'`network-conn-pool.cpp
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-network-conn-pool.Tpo $(DEPDIR)/jiayuan_dbproxy-network-conn-pool.Po
-#	source='network-conn-pool.cpp' object='jiayuan_dbproxy-network-conn-pool.o' libtool=no \
+xxfs_dbproxy-network-conn-pool.o: network-conn-pool.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-network-conn-pool.o -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-network-conn-pool.Tpo -c -o xxfs_dbproxy-network-conn-pool.o `test -f 'network-conn-pool.cpp' || echo '$(srcdir)/'`network-conn-pool.cpp
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-network-conn-pool.Tpo $(DEPDIR)/xxfs_dbproxy-network-conn-pool.Po
+#	source='network-conn-pool.cpp' object='xxfs_dbproxy-network-conn-pool.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-network-conn-pool.o `test -f 'network-conn-pool.cpp' || echo '$(srcdir)/'`network-conn-pool.cpp
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-network-conn-pool.o `test -f 'network-conn-pool.cpp' || echo '$(srcdir)/'`network-conn-pool.cpp
 
-jiayuan_dbproxy-network-conn-pool.obj: network-conn-pool.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-network-conn-pool.obj -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-network-conn-pool.Tpo -c -o jiayuan_dbproxy-network-conn-pool.obj `if test -f 'network-conn-pool.cpp'; then $(CYGPATH_W) 'network-conn-pool.cpp'; else $(CYGPATH_W) '$(srcdir)/network-conn-pool.cpp'; fi`
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-network-conn-pool.Tpo $(DEPDIR)/jiayuan_dbproxy-network-conn-pool.Po
-#	source='network-conn-pool.cpp' object='jiayuan_dbproxy-network-conn-pool.obj' libtool=no \
+xxfs_dbproxy-network-conn-pool.obj: network-conn-pool.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-network-conn-pool.obj -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-network-conn-pool.Tpo -c -o xxfs_dbproxy-network-conn-pool.obj `if test -f 'network-conn-pool.cpp'; then $(CYGPATH_W) 'network-conn-pool.cpp'; else $(CYGPATH_W) '$(srcdir)/network-conn-pool.cpp'; fi`
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-network-conn-pool.Tpo $(DEPDIR)/xxfs_dbproxy-network-conn-pool.Po
+#	source='network-conn-pool.cpp' object='xxfs_dbproxy-network-conn-pool.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-network-conn-pool.obj `if test -f 'network-conn-pool.cpp'; then $(CYGPATH_W) 'network-conn-pool.cpp'; else $(CYGPATH_W) '$(srcdir)/network-conn-pool.cpp'; fi`
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-network-conn-pool.obj `if test -f 'network-conn-pool.cpp'; then $(CYGPATH_W) 'network-conn-pool.cpp'; else $(CYGPATH_W) '$(srcdir)/network-conn-pool.cpp'; fi`
 
-jiayuan_dbproxy-network-socket.o: network-socket.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-network-socket.o -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-network-socket.Tpo -c -o jiayuan_dbproxy-network-socket.o `test -f 'network-socket.cpp' || echo '$(srcdir)/'`network-socket.cpp
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-network-socket.Tpo $(DEPDIR)/jiayuan_dbproxy-network-socket.Po
-#	source='network-socket.cpp' object='jiayuan_dbproxy-network-socket.o' libtool=no \
+xxfs_dbproxy-network-socket.o: network-socket.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-network-socket.o -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-network-socket.Tpo -c -o xxfs_dbproxy-network-socket.o `test -f 'network-socket.cpp' || echo '$(srcdir)/'`network-socket.cpp
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-network-socket.Tpo $(DEPDIR)/xxfs_dbproxy-network-socket.Po
+#	source='network-socket.cpp' object='xxfs_dbproxy-network-socket.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-network-socket.o `test -f 'network-socket.cpp' || echo '$(srcdir)/'`network-socket.cpp
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-network-socket.o `test -f 'network-socket.cpp' || echo '$(srcdir)/'`network-socket.cpp
 
-jiayuan_dbproxy-network-socket.obj: network-socket.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-network-socket.obj -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-network-socket.Tpo -c -o jiayuan_dbproxy-network-socket.obj `if test -f 'network-socket.cpp'; then $(CYGPATH_W) 'network-socket.cpp'; else $(CYGPATH_W) '$(srcdir)/network-socket.cpp'; fi`
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-network-socket.Tpo $(DEPDIR)/jiayuan_dbproxy-network-socket.Po
-#	source='network-socket.cpp' object='jiayuan_dbproxy-network-socket.obj' libtool=no \
+xxfs_dbproxy-network-socket.obj: network-socket.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-network-socket.obj -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-network-socket.Tpo -c -o xxfs_dbproxy-network-socket.obj `if test -f 'network-socket.cpp'; then $(CYGPATH_W) 'network-socket.cpp'; else $(CYGPATH_W) '$(srcdir)/network-socket.cpp'; fi`
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-network-socket.Tpo $(DEPDIR)/xxfs_dbproxy-network-socket.Po
+#	source='network-socket.cpp' object='xxfs_dbproxy-network-socket.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-network-socket.obj `if test -f 'network-socket.cpp'; then $(CYGPATH_W) 'network-socket.cpp'; else $(CYGPATH_W) '$(srcdir)/network-socket.cpp'; fi`
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-network-socket.obj `if test -f 'network-socket.cpp'; then $(CYGPATH_W) 'network-socket.cpp'; else $(CYGPATH_W) '$(srcdir)/network-socket.cpp'; fi`
 
-jiayuan_dbproxy-glib-ext.o: glib-ext.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-glib-ext.o -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-glib-ext.Tpo -c -o jiayuan_dbproxy-glib-ext.o `test -f 'glib-ext.cpp' || echo '$(srcdir)/'`glib-ext.cpp
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-glib-ext.Tpo $(DEPDIR)/jiayuan_dbproxy-glib-ext.Po
-#	source='glib-ext.cpp' object='jiayuan_dbproxy-glib-ext.o' libtool=no \
+xxfs_dbproxy-glib-ext.o: glib-ext.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-glib-ext.o -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-glib-ext.Tpo -c -o xxfs_dbproxy-glib-ext.o `test -f 'glib-ext.cpp' || echo '$(srcdir)/'`glib-ext.cpp
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-glib-ext.Tpo $(DEPDIR)/xxfs_dbproxy-glib-ext.Po
+#	source='glib-ext.cpp' object='xxfs_dbproxy-glib-ext.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-glib-ext.o `test -f 'glib-ext.cpp' || echo '$(srcdir)/'`glib-ext.cpp
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-glib-ext.o `test -f 'glib-ext.cpp' || echo '$(srcdir)/'`glib-ext.cpp
 
-jiayuan_dbproxy-glib-ext.obj: glib-ext.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-glib-ext.obj -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-glib-ext.Tpo -c -o jiayuan_dbproxy-glib-ext.obj `if test -f 'glib-ext.cpp'; then $(CYGPATH_W) 'glib-ext.cpp'; else $(CYGPATH_W) '$(srcdir)/glib-ext.cpp'; fi`
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-glib-ext.Tpo $(DEPDIR)/jiayuan_dbproxy-glib-ext.Po
-#	source='glib-ext.cpp' object='jiayuan_dbproxy-glib-ext.obj' libtool=no \
+xxfs_dbproxy-glib-ext.obj: glib-ext.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-glib-ext.obj -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-glib-ext.Tpo -c -o xxfs_dbproxy-glib-ext.obj `if test -f 'glib-ext.cpp'; then $(CYGPATH_W) 'glib-ext.cpp'; else $(CYGPATH_W) '$(srcdir)/glib-ext.cpp'; fi`
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-glib-ext.Tpo $(DEPDIR)/xxfs_dbproxy-glib-ext.Po
+#	source='glib-ext.cpp' object='xxfs_dbproxy-glib-ext.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-glib-ext.obj `if test -f 'glib-ext.cpp'; then $(CYGPATH_W) 'glib-ext.cpp'; else $(CYGPATH_W) '$(srcdir)/glib-ext.cpp'; fi`
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-glib-ext.obj `if test -f 'glib-ext.cpp'; then $(CYGPATH_W) 'glib-ext.cpp'; else $(CYGPATH_W) '$(srcdir)/glib-ext.cpp'; fi`
 
-jiayuan_dbproxy-mysql_wrapper.o: mysql_wrapper.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-mysql_wrapper.o -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-mysql_wrapper.Tpo -c -o jiayuan_dbproxy-mysql_wrapper.o `test -f 'mysql_wrapper.cpp' || echo '$(srcdir)/'`mysql_wrapper.cpp
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-mysql_wrapper.Tpo $(DEPDIR)/jiayuan_dbproxy-mysql_wrapper.Po
-#	source='mysql_wrapper.cpp' object='jiayuan_dbproxy-mysql_wrapper.o' libtool=no \
+xxfs_dbproxy-mysql_wrapper.o: mysql_wrapper.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-mysql_wrapper.o -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-mysql_wrapper.Tpo -c -o xxfs_dbproxy-mysql_wrapper.o `test -f 'mysql_wrapper.cpp' || echo '$(srcdir)/'`mysql_wrapper.cpp
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-mysql_wrapper.Tpo $(DEPDIR)/xxfs_dbproxy-mysql_wrapper.Po
+#	source='mysql_wrapper.cpp' object='xxfs_dbproxy-mysql_wrapper.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-mysql_wrapper.o `test -f 'mysql_wrapper.cpp' || echo '$(srcdir)/'`mysql_wrapper.cpp
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-mysql_wrapper.o `test -f 'mysql_wrapper.cpp' || echo '$(srcdir)/'`mysql_wrapper.cpp
 
-jiayuan_dbproxy-mysql_wrapper.obj: mysql_wrapper.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-mysql_wrapper.obj -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-mysql_wrapper.Tpo -c -o jiayuan_dbproxy-mysql_wrapper.obj `if test -f 'mysql_wrapper.cpp'; then $(CYGPATH_W) 'mysql_wrapper.cpp'; else $(CYGPATH_W) '$(srcdir)/mysql_wrapper.cpp'; fi`
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-mysql_wrapper.Tpo $(DEPDIR)/jiayuan_dbproxy-mysql_wrapper.Po
-#	source='mysql_wrapper.cpp' object='jiayuan_dbproxy-mysql_wrapper.obj' libtool=no \
+xxfs_dbproxy-mysql_wrapper.obj: mysql_wrapper.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-mysql_wrapper.obj -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-mysql_wrapper.Tpo -c -o xxfs_dbproxy-mysql_wrapper.obj `if test -f 'mysql_wrapper.cpp'; then $(CYGPATH_W) 'mysql_wrapper.cpp'; else $(CYGPATH_W) '$(srcdir)/mysql_wrapper.cpp'; fi`
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-mysql_wrapper.Tpo $(DEPDIR)/xxfs_dbproxy-mysql_wrapper.Po
+#	source='mysql_wrapper.cpp' object='xxfs_dbproxy-mysql_wrapper.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-mysql_wrapper.obj `if test -f 'mysql_wrapper.cpp'; then $(CYGPATH_W) 'mysql_wrapper.cpp'; else $(CYGPATH_W) '$(srcdir)/mysql_wrapper.cpp'; fi`
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-mysql_wrapper.obj `if test -f 'mysql_wrapper.cpp'; then $(CYGPATH_W) 'mysql_wrapper.cpp'; else $(CYGPATH_W) '$(srcdir)/mysql_wrapper.cpp'; fi`
 
-jiayuan_dbproxy-partition.o: partition.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-partition.o -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-partition.Tpo -c -o jiayuan_dbproxy-partition.o `test -f 'partition.cpp' || echo '$(srcdir)/'`partition.cpp
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-partition.Tpo $(DEPDIR)/jiayuan_dbproxy-partition.Po
-#	source='partition.cpp' object='jiayuan_dbproxy-partition.o' libtool=no \
+xxfs_dbproxy-partition.o: partition.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-partition.o -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-partition.Tpo -c -o xxfs_dbproxy-partition.o `test -f 'partition.cpp' || echo '$(srcdir)/'`partition.cpp
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-partition.Tpo $(DEPDIR)/xxfs_dbproxy-partition.Po
+#	source='partition.cpp' object='xxfs_dbproxy-partition.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-partition.o `test -f 'partition.cpp' || echo '$(srcdir)/'`partition.cpp
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-partition.o `test -f 'partition.cpp' || echo '$(srcdir)/'`partition.cpp
 
-jiayuan_dbproxy-partition.obj: partition.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-partition.obj -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-partition.Tpo -c -o jiayuan_dbproxy-partition.obj `if test -f 'partition.cpp'; then $(CYGPATH_W) 'partition.cpp'; else $(CYGPATH_W) '$(srcdir)/partition.cpp'; fi`
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-partition.Tpo $(DEPDIR)/jiayuan_dbproxy-partition.Po
-#	source='partition.cpp' object='jiayuan_dbproxy-partition.obj' libtool=no \
+xxfs_dbproxy-partition.obj: partition.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-partition.obj -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-partition.Tpo -c -o xxfs_dbproxy-partition.obj `if test -f 'partition.cpp'; then $(CYGPATH_W) 'partition.cpp'; else $(CYGPATH_W) '$(srcdir)/partition.cpp'; fi`
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-partition.Tpo $(DEPDIR)/xxfs_dbproxy-partition.Po
+#	source='partition.cpp' object='xxfs_dbproxy-partition.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-partition.obj `if test -f 'partition.cpp'; then $(CYGPATH_W) 'partition.cpp'; else $(CYGPATH_W) '$(srcdir)/partition.cpp'; fi`
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-partition.obj `if test -f 'partition.cpp'; then $(CYGPATH_W) 'partition.cpp'; else $(CYGPATH_W) '$(srcdir)/partition.cpp'; fi`
 
-jiayuan_dbproxy-sql-parser.o: sql-parser.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-sql-parser.o -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-sql-parser.Tpo -c -o jiayuan_dbproxy-sql-parser.o `test -f 'sql-parser.cpp' || echo '$(srcdir)/'`sql-parser.cpp
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-sql-parser.Tpo $(DEPDIR)/jiayuan_dbproxy-sql-parser.Po
-#	source='sql-parser.cpp' object='jiayuan_dbproxy-sql-parser.o' libtool=no \
+xxfs_dbproxy-sql-parser.o: sql-parser.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-sql-parser.o -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-sql-parser.Tpo -c -o xxfs_dbproxy-sql-parser.o `test -f 'sql-parser.cpp' || echo '$(srcdir)/'`sql-parser.cpp
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-sql-parser.Tpo $(DEPDIR)/xxfs_dbproxy-sql-parser.Po
+#	source='sql-parser.cpp' object='xxfs_dbproxy-sql-parser.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-sql-parser.o `test -f 'sql-parser.cpp' || echo '$(srcdir)/'`sql-parser.cpp
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-sql-parser.o `test -f 'sql-parser.cpp' || echo '$(srcdir)/'`sql-parser.cpp
 
-jiayuan_dbproxy-sql-parser.obj: sql-parser.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-sql-parser.obj -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-sql-parser.Tpo -c -o jiayuan_dbproxy-sql-parser.obj `if test -f 'sql-parser.cpp'; then $(CYGPATH_W) 'sql-parser.cpp'; else $(CYGPATH_W) '$(srcdir)/sql-parser.cpp'; fi`
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-sql-parser.Tpo $(DEPDIR)/jiayuan_dbproxy-sql-parser.Po
-#	source='sql-parser.cpp' object='jiayuan_dbproxy-sql-parser.obj' libtool=no \
+xxfs_dbproxy-sql-parser.obj: sql-parser.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-sql-parser.obj -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-sql-parser.Tpo -c -o xxfs_dbproxy-sql-parser.obj `if test -f 'sql-parser.cpp'; then $(CYGPATH_W) 'sql-parser.cpp'; else $(CYGPATH_W) '$(srcdir)/sql-parser.cpp'; fi`
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-sql-parser.Tpo $(DEPDIR)/xxfs_dbproxy-sql-parser.Po
+#	source='sql-parser.cpp' object='xxfs_dbproxy-sql-parser.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-sql-parser.obj `if test -f 'sql-parser.cpp'; then $(CYGPATH_W) 'sql-parser.cpp'; else $(CYGPATH_W) '$(srcdir)/sql-parser.cpp'; fi`
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-sql-parser.obj `if test -f 'sql-parser.cpp'; then $(CYGPATH_W) 'sql-parser.cpp'; else $(CYGPATH_W) '$(srcdir)/sql-parser.cpp'; fi`
 
-jiayuan_dbproxy-perf_monitor.o: perf_monitor.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-perf_monitor.o -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-perf_monitor.Tpo -c -o jiayuan_dbproxy-perf_monitor.o `test -f 'perf_monitor.cpp' || echo '$(srcdir)/'`perf_monitor.cpp
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-perf_monitor.Tpo $(DEPDIR)/jiayuan_dbproxy-perf_monitor.Po
-#	source='perf_monitor.cpp' object='jiayuan_dbproxy-perf_monitor.o' libtool=no \
+xxfs_dbproxy-perf_monitor.o: perf_monitor.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-perf_monitor.o -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-perf_monitor.Tpo -c -o xxfs_dbproxy-perf_monitor.o `test -f 'perf_monitor.cpp' || echo '$(srcdir)/'`perf_monitor.cpp
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-perf_monitor.Tpo $(DEPDIR)/xxfs_dbproxy-perf_monitor.Po
+#	source='perf_monitor.cpp' object='xxfs_dbproxy-perf_monitor.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-perf_monitor.o `test -f 'perf_monitor.cpp' || echo '$(srcdir)/'`perf_monitor.cpp
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-perf_monitor.o `test -f 'perf_monitor.cpp' || echo '$(srcdir)/'`perf_monitor.cpp
 
-jiayuan_dbproxy-perf_monitor.obj: perf_monitor.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-perf_monitor.obj -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-perf_monitor.Tpo -c -o jiayuan_dbproxy-perf_monitor.obj `if test -f 'perf_monitor.cpp'; then $(CYGPATH_W) 'perf_monitor.cpp'; else $(CYGPATH_W) '$(srcdir)/perf_monitor.cpp'; fi`
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-perf_monitor.Tpo $(DEPDIR)/jiayuan_dbproxy-perf_monitor.Po
-#	source='perf_monitor.cpp' object='jiayuan_dbproxy-perf_monitor.obj' libtool=no \
+xxfs_dbproxy-perf_monitor.obj: perf_monitor.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-perf_monitor.obj -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-perf_monitor.Tpo -c -o xxfs_dbproxy-perf_monitor.obj `if test -f 'perf_monitor.cpp'; then $(CYGPATH_W) 'perf_monitor.cpp'; else $(CYGPATH_W) '$(srcdir)/perf_monitor.cpp'; fi`
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-perf_monitor.Tpo $(DEPDIR)/xxfs_dbproxy-perf_monitor.Po
+#	source='perf_monitor.cpp' object='xxfs_dbproxy-perf_monitor.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-perf_monitor.obj `if test -f 'perf_monitor.cpp'; then $(CYGPATH_W) 'perf_monitor.cpp'; else $(CYGPATH_W) '$(srcdir)/perf_monitor.cpp'; fi`
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-perf_monitor.obj `if test -f 'perf_monitor.cpp'; then $(CYGPATH_W) 'perf_monitor.cpp'; else $(CYGPATH_W) '$(srcdir)/perf_monitor.cpp'; fi`
 
-jiayuan_dbproxy-messages.o: messages.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-messages.o -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-messages.Tpo -c -o jiayuan_dbproxy-messages.o `test -f 'messages.cpp' || echo '$(srcdir)/'`messages.cpp
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-messages.Tpo $(DEPDIR)/jiayuan_dbproxy-messages.Po
-#	source='messages.cpp' object='jiayuan_dbproxy-messages.o' libtool=no \
+xxfs_dbproxy-messages.o: messages.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-messages.o -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-messages.Tpo -c -o xxfs_dbproxy-messages.o `test -f 'messages.cpp' || echo '$(srcdir)/'`messages.cpp
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-messages.Tpo $(DEPDIR)/xxfs_dbproxy-messages.Po
+#	source='messages.cpp' object='xxfs_dbproxy-messages.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-messages.o `test -f 'messages.cpp' || echo '$(srcdir)/'`messages.cpp
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-messages.o `test -f 'messages.cpp' || echo '$(srcdir)/'`messages.cpp
 
-jiayuan_dbproxy-messages.obj: messages.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-messages.obj -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-messages.Tpo -c -o jiayuan_dbproxy-messages.obj `if test -f 'messages.cpp'; then $(CYGPATH_W) 'messages.cpp'; else $(CYGPATH_W) '$(srcdir)/messages.cpp'; fi`
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-messages.Tpo $(DEPDIR)/jiayuan_dbproxy-messages.Po
-#	source='messages.cpp' object='jiayuan_dbproxy-messages.obj' libtool=no \
+xxfs_dbproxy-messages.obj: messages.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-messages.obj -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-messages.Tpo -c -o xxfs_dbproxy-messages.obj `if test -f 'messages.cpp'; then $(CYGPATH_W) 'messages.cpp'; else $(CYGPATH_W) '$(srcdir)/messages.cpp'; fi`
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-messages.Tpo $(DEPDIR)/xxfs_dbproxy-messages.Po
+#	source='messages.cpp' object='xxfs_dbproxy-messages.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-messages.obj `if test -f 'messages.cpp'; then $(CYGPATH_W) 'messages.cpp'; else $(CYGPATH_W) '$(srcdir)/messages.cpp'; fi`
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-messages.obj `if test -f 'messages.cpp'; then $(CYGPATH_W) 'messages.cpp'; else $(CYGPATH_W) '$(srcdir)/messages.cpp'; fi`
 
-jiayuan_dbproxy-resultset_merge.o: resultset_merge.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-resultset_merge.o -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-resultset_merge.Tpo -c -o jiayuan_dbproxy-resultset_merge.o `test -f 'resultset_merge.cpp' || echo '$(srcdir)/'`resultset_merge.cpp
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-resultset_merge.Tpo $(DEPDIR)/jiayuan_dbproxy-resultset_merge.Po
-#	source='resultset_merge.cpp' object='jiayuan_dbproxy-resultset_merge.o' libtool=no \
+xxfs_dbproxy-resultset_merge.o: resultset_merge.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-resultset_merge.o -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-resultset_merge.Tpo -c -o xxfs_dbproxy-resultset_merge.o `test -f 'resultset_merge.cpp' || echo '$(srcdir)/'`resultset_merge.cpp
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-resultset_merge.Tpo $(DEPDIR)/xxfs_dbproxy-resultset_merge.Po
+#	source='resultset_merge.cpp' object='xxfs_dbproxy-resultset_merge.o' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-resultset_merge.o `test -f 'resultset_merge.cpp' || echo '$(srcdir)/'`resultset_merge.cpp
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-resultset_merge.o `test -f 'resultset_merge.cpp' || echo '$(srcdir)/'`resultset_merge.cpp
 
-jiayuan_dbproxy-resultset_merge.obj: resultset_merge.cpp
-	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT jiayuan_dbproxy-resultset_merge.obj -MD -MP -MF $(DEPDIR)/jiayuan_dbproxy-resultset_merge.Tpo -c -o jiayuan_dbproxy-resultset_merge.obj `if test -f 'resultset_merge.cpp'; then $(CYGPATH_W) 'resultset_merge.cpp'; else $(CYGPATH_W) '$(srcdir)/resultset_merge.cpp'; fi`
-	$(am__mv) $(DEPDIR)/jiayuan_dbproxy-resultset_merge.Tpo $(DEPDIR)/jiayuan_dbproxy-resultset_merge.Po
-#	source='resultset_merge.cpp' object='jiayuan_dbproxy-resultset_merge.obj' libtool=no \
+xxfs_dbproxy-resultset_merge.obj: resultset_merge.cpp
+	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -MT xxfs_dbproxy-resultset_merge.obj -MD -MP -MF $(DEPDIR)/xxfs_dbproxy-resultset_merge.Tpo -c -o xxfs_dbproxy-resultset_merge.obj `if test -f 'resultset_merge.cpp'; then $(CYGPATH_W) 'resultset_merge.cpp'; else $(CYGPATH_W) '$(srcdir)/resultset_merge.cpp'; fi`
+	$(am__mv) $(DEPDIR)/xxfs_dbproxy-resultset_merge.Tpo $(DEPDIR)/xxfs_dbproxy-resultset_merge.Po
+#	source='resultset_merge.cpp' object='xxfs_dbproxy-resultset_merge.obj' libtool=no \
 #	DEPDIR=$(DEPDIR) $(CXXDEPMODE) $(depcomp) \
-#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(jiayuan_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o jiayuan_dbproxy-resultset_merge.obj `if test -f 'resultset_merge.cpp'; then $(CYGPATH_W) 'resultset_merge.cpp'; else $(CYGPATH_W) '$(srcdir)/resultset_merge.cpp'; fi`
+#	$(CXX) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(xxfs_dbproxy_CPPFLAGS) $(CPPFLAGS) $(AM_CXXFLAGS) $(CXXFLAGS) -c -o xxfs_dbproxy-resultset_merge.obj `if test -f 'resultset_merge.cpp'; then $(CYGPATH_W) 'resultset_merge.cpp'; else $(CYGPATH_W) '$(srcdir)/resultset_merge.cpp'; fi`
 
 .l.c:
 	$(am__skiplex) $(SHELL) $(YLWRAP) $< $(LEX_OUTPUT_ROOT).c $@ -- $(LEXCOMPILE)

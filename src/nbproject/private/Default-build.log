@@ -1,26 +1,26 @@
-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT jiayuan_dbproxy-jiayuan_dbproxy.o -MD -MP -MF .deps/jiayuan_dbproxy-jiayuan_dbproxy.Tpo -c -o jiayuan_dbproxy-jiayuan_dbproxy.o `test -f 'jiayuan_dbproxy.cpp' || echo './'`jiayuan_dbproxy.cpp
+g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT xxfs_dbproxy-xxfs_dbproxy.o -MD -MP -MF .deps/xxfs_dbproxy-xxfs_dbproxy.Tpo -c -o xxfs_dbproxy-xxfs_dbproxy.o `test -f 'xxfs_dbproxy.cpp' || echo './'`xxfs_dbproxy.cpp
 In file included from /usr/include/c++/4.8/ext/hash_map:60:0,
                  from perf_monitor.h:65,
                  from network-socket.h:42,
                  from network-mysqld.h:30,
-                 from jiayuan_dbproxy.cpp:34:
+                 from xxfs_dbproxy.cpp:34:
 /usr/include/c++/4.8/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-jiayuan_dbproxy.cpp: In function ‘void init_backend_pool(network_mysqld*)’:
-jiayuan_dbproxy.cpp:370:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+xxfs_dbproxy.cpp: In function ‘void init_backend_pool(network_mysqld*)’:
+xxfs_dbproxy.cpp:370:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
   for (k = 0; k < db_ids.size(); k++) {
                               ^
-jiayuan_dbproxy.cpp: In function ‘int main(int, char**)’:
-jiayuan_dbproxy.cpp:650:38: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
+xxfs_dbproxy.cpp: In function ‘int main(int, char**)’:
+xxfs_dbproxy.cpp:650:38: warning: ignoring return value of ‘ssize_t write(int, const void*, size_t)’, declared with attribute warn_unused_result [-Wunused-result]
    write(fd, pid_str, strlen(pid_str));
                                       ^
-jiayuan_dbproxy.cpp: In function ‘void daemonize()’:
-jiayuan_dbproxy.cpp:360:12: warning: ignoring return value of ‘int chdir(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
+xxfs_dbproxy.cpp: In function ‘void daemonize()’:
+xxfs_dbproxy.cpp:360:12: warning: ignoring return value of ‘int chdir(const char*)’, declared with attribute warn_unused_result [-Wunused-result]
   chdir("/");
             ^
-mv -f .deps/jiayuan_dbproxy-jiayuan_dbproxy.Tpo .deps/jiayuan_dbproxy-jiayuan_dbproxy.Po
-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT jiayuan_dbproxy-network-mysqld.o -MD -MP -MF .deps/jiayuan_dbproxy-network-mysqld.Tpo -c -o jiayuan_dbproxy-network-mysqld.o `test -f 'network-mysqld.cpp' || echo './'`network-mysqld.cpp
+mv -f .deps/xxfs_dbproxy-xxfs_dbproxy.Tpo .deps/xxfs_dbproxy-xxfs_dbproxy.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT xxfs_dbproxy-network-mysqld.o -MD -MP -MF .deps/xxfs_dbproxy-network-mysqld.Tpo -c -o xxfs_dbproxy-network-mysqld.o `test -f 'network-mysqld.cpp' || echo './'`network-mysqld.cpp
 In file included from /usr/include/c++/4.8/ext/hash_map:60:0,
                  from perf_monitor.h:65,
                  from network-socket.h:42,
@@ -82,10 +82,10 @@ network-mysqld.cpp:1723:74: warning: suggest parentheses around assignment used 
 network-mysqld.cpp:2201:25: warning: unused variable ‘insert_id’ [-Wunused-variable]
                      int insert_id = 5;
                          ^
-mv -f .deps/jiayuan_dbproxy-network-mysqld.Tpo .deps/jiayuan_dbproxy-network-mysqld.Po
-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT jiayuan_dbproxy-network-mysqld-proto.o -MD -MP -MF .deps/jiayuan_dbproxy-network-mysqld-proto.Tpo -c -o jiayuan_dbproxy-network-mysqld-proto.o `test -f 'network-mysqld-proto.cpp' || echo './'`network-mysqld-proto.cpp
-mv -f .deps/jiayuan_dbproxy-network-mysqld-proto.Tpo .deps/jiayuan_dbproxy-network-mysqld-proto.Po
-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT jiayuan_dbproxy-network-mysqld-proxy.o -MD -MP -MF .deps/jiayuan_dbproxy-network-mysqld-proxy.Tpo -c -o jiayuan_dbproxy-network-mysqld-proxy.o `test -f 'network-mysqld-proxy.cpp' || echo './'`network-mysqld-proxy.cpp
+mv -f .deps/xxfs_dbproxy-network-mysqld.Tpo .deps/xxfs_dbproxy-network-mysqld.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT xxfs_dbproxy-network-mysqld-proto.o -MD -MP -MF .deps/xxfs_dbproxy-network-mysqld-proto.Tpo -c -o xxfs_dbproxy-network-mysqld-proto.o `test -f 'network-mysqld-proto.cpp' || echo './'`network-mysqld-proto.cpp
+mv -f .deps/xxfs_dbproxy-network-mysqld-proto.Tpo .deps/xxfs_dbproxy-network-mysqld-proto.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT xxfs_dbproxy-network-mysqld-proxy.o -MD -MP -MF .deps/xxfs_dbproxy-network-mysqld-proxy.Tpo -c -o xxfs_dbproxy-network-mysqld-proxy.o `test -f 'network-mysqld-proxy.cpp' || echo './'`network-mysqld-proxy.cpp
 In file included from /usr/include/c++/4.8/ext/hash_map:60:0,
                  from perf_monitor.h:65,
                  from network-socket.h:42,
@@ -170,8 +170,8 @@ network-mysqld-proxy.cpp: In function ‘int getTableIdx(const char*)’:
 network-mysqld-proxy.cpp:131:39: warning: ‘after’ may be used uninitialized in this function [-Wmaybe-uninitialized]
   const char *t = seek_after(sql, after);
                                        ^
-mv -f .deps/jiayuan_dbproxy-network-mysqld-proxy.Tpo .deps/jiayuan_dbproxy-network-mysqld-proxy.Po
-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT jiayuan_dbproxy-network-mysqld-server.o -MD -MP -MF .deps/jiayuan_dbproxy-network-mysqld-server.Tpo -c -o jiayuan_dbproxy-network-mysqld-server.o `test -f 'network-mysqld-server.cpp' || echo './'`network-mysqld-server.cpp
+mv -f .deps/xxfs_dbproxy-network-mysqld-proxy.Tpo .deps/xxfs_dbproxy-network-mysqld-proxy.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT xxfs_dbproxy-network-mysqld-server.o -MD -MP -MF .deps/xxfs_dbproxy-network-mysqld-server.Tpo -c -o xxfs_dbproxy-network-mysqld-server.o `test -f 'network-mysqld-server.cpp' || echo './'`network-mysqld-server.cpp
 In file included from /usr/include/c++/4.8/ext/hash_map:60:0,
                  from perf_monitor.h:65,
                  from network-socket.h:42,
@@ -180,8 +180,8 @@ In file included from /usr/include/c++/4.8/ext/hash_map:60:0,
 /usr/include/c++/4.8/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-mv -f .deps/jiayuan_dbproxy-network-mysqld-server.Tpo .deps/jiayuan_dbproxy-network-mysqld-server.Po
-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT jiayuan_dbproxy-network-mysqld-table.o -MD -MP -MF .deps/jiayuan_dbproxy-network-mysqld-table.Tpo -c -o jiayuan_dbproxy-network-mysqld-table.o `test -f 'network-mysqld-table.cpp' || echo './'`network-mysqld-table.cpp
+mv -f .deps/xxfs_dbproxy-network-mysqld-server.Tpo .deps/xxfs_dbproxy-network-mysqld-server.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT xxfs_dbproxy-network-mysqld-table.o -MD -MP -MF .deps/xxfs_dbproxy-network-mysqld-table.Tpo -c -o xxfs_dbproxy-network-mysqld-table.o `test -f 'network-mysqld-table.cpp' || echo './'`network-mysqld-table.cpp
 In file included from /usr/include/c++/4.8/ext/hash_map:60:0,
                  from perf_monitor.h:65,
                  from network-socket.h:42,
@@ -190,8 +190,8 @@ In file included from /usr/include/c++/4.8/ext/hash_map:60:0,
 /usr/include/c++/4.8/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-mv -f .deps/jiayuan_dbproxy-network-mysqld-table.Tpo .deps/jiayuan_dbproxy-network-mysqld-table.Po
-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT jiayuan_dbproxy-network-conn-pool.o -MD -MP -MF .deps/jiayuan_dbproxy-network-conn-pool.Tpo -c -o jiayuan_dbproxy-network-conn-pool.o `test -f 'network-conn-pool.cpp' || echo './'`network-conn-pool.cpp
+mv -f .deps/xxfs_dbproxy-network-mysqld-table.Tpo .deps/xxfs_dbproxy-network-mysqld-table.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT xxfs_dbproxy-network-conn-pool.o -MD -MP -MF .deps/xxfs_dbproxy-network-conn-pool.Tpo -c -o xxfs_dbproxy-network-conn-pool.o `test -f 'network-conn-pool.cpp' || echo './'`network-conn-pool.cpp
 In file included from /usr/include/c++/4.8/ext/hash_map:60:0,
                  from perf_monitor.h:65,
                  from network-socket.h:42,
@@ -200,8 +200,8 @@ In file included from /usr/include/c++/4.8/ext/hash_map:60:0,
 /usr/include/c++/4.8/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-mv -f .deps/jiayuan_dbproxy-network-conn-pool.Tpo .deps/jiayuan_dbproxy-network-conn-pool.Po
-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT jiayuan_dbproxy-network-socket.o -MD -MP -MF .deps/jiayuan_dbproxy-network-socket.Tpo -c -o jiayuan_dbproxy-network-socket.o `test -f 'network-socket.cpp' || echo './'`network-socket.cpp
+mv -f .deps/xxfs_dbproxy-network-conn-pool.Tpo .deps/xxfs_dbproxy-network-conn-pool.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT xxfs_dbproxy-network-socket.o -MD -MP -MF .deps/xxfs_dbproxy-network-socket.Tpo -c -o xxfs_dbproxy-network-socket.o `test -f 'network-socket.cpp' || echo './'`network-socket.cpp
 In file included from /usr/include/c++/4.8/ext/hash_map:60:0,
                  from perf_monitor.h:65,
                  from network-socket.h:42,
@@ -209,17 +209,17 @@ In file included from /usr/include/c++/4.8/ext/hash_map:60:0,
 /usr/include/c++/4.8/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-mv -f .deps/jiayuan_dbproxy-network-socket.Tpo .deps/jiayuan_dbproxy-network-socket.Po
-gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -DLIBDIR="\"/usr/local/share/jiayuan_dbproxy\""  -g -O2 -MT jiayuan_dbproxy-sql-tokenizer.o -MD -MP -MF .deps/jiayuan_dbproxy-sql-tokenizer.Tpo -c -o jiayuan_dbproxy-sql-tokenizer.o `test -f 'sql-tokenizer.c' || echo './'`sql-tokenizer.c
+mv -f .deps/xxfs_dbproxy-network-socket.Tpo .deps/xxfs_dbproxy-network-socket.Po
+gcc -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES -DLIBDIR="\"/usr/local/share/xxfs_dbproxy\""  -g -O2 -MT xxfs_dbproxy-sql-tokenizer.o -MD -MP -MF .deps/xxfs_dbproxy-sql-tokenizer.Tpo -c -o xxfs_dbproxy-sql-tokenizer.o `test -f 'sql-tokenizer.c' || echo './'`sql-tokenizer.c
 sql-tokenizer.c:2510:16: warning: ‘input’ defined but not used [-Wunused-function]
  #endif
                 ^
-mv -f .deps/jiayuan_dbproxy-sql-tokenizer.Tpo .deps/jiayuan_dbproxy-sql-tokenizer.Po
-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT jiayuan_dbproxy-glib-ext.o -MD -MP -MF .deps/jiayuan_dbproxy-glib-ext.Tpo -c -o jiayuan_dbproxy-glib-ext.o `test -f 'glib-ext.cpp' || echo './'`glib-ext.cpp
-mv -f .deps/jiayuan_dbproxy-glib-ext.Tpo .deps/jiayuan_dbproxy-glib-ext.Po
-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT jiayuan_dbproxy-mysql_wrapper.o -MD -MP -MF .deps/jiayuan_dbproxy-mysql_wrapper.Tpo -c -o jiayuan_dbproxy-mysql_wrapper.o `test -f 'mysql_wrapper.cpp' || echo './'`mysql_wrapper.cpp
-mv -f .deps/jiayuan_dbproxy-mysql_wrapper.Tpo .deps/jiayuan_dbproxy-mysql_wrapper.Po
-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT jiayuan_dbproxy-partition.o -MD -MP -MF .deps/jiayuan_dbproxy-partition.Tpo -c -o jiayuan_dbproxy-partition.o `test -f 'partition.cpp' || echo './'`partition.cpp
+mv -f .deps/xxfs_dbproxy-sql-tokenizer.Tpo .deps/xxfs_dbproxy-sql-tokenizer.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT xxfs_dbproxy-glib-ext.o -MD -MP -MF .deps/xxfs_dbproxy-glib-ext.Tpo -c -o xxfs_dbproxy-glib-ext.o `test -f 'glib-ext.cpp' || echo './'`glib-ext.cpp
+mv -f .deps/xxfs_dbproxy-glib-ext.Tpo .deps/xxfs_dbproxy-glib-ext.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT xxfs_dbproxy-mysql_wrapper.o -MD -MP -MF .deps/xxfs_dbproxy-mysql_wrapper.Tpo -c -o xxfs_dbproxy-mysql_wrapper.o `test -f 'mysql_wrapper.cpp' || echo './'`mysql_wrapper.cpp
+mv -f .deps/xxfs_dbproxy-mysql_wrapper.Tpo .deps/xxfs_dbproxy-mysql_wrapper.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT xxfs_dbproxy-partition.o -MD -MP -MF .deps/xxfs_dbproxy-partition.Tpo -c -o xxfs_dbproxy-partition.o `test -f 'partition.cpp' || echo './'`partition.cpp
 In file included from /usr/include/c++/4.8/ext/hash_map:60:0,
                  from partition.h:55,
                  from partition.cpp:3:
@@ -230,8 +230,8 @@ partition.cpp: In member function ‘bool IdMapping::findMappingEntry(const stri
 partition.cpp:46:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
              if (itr->second.masterid == *entryIdx) {
                                           ^
-mv -f .deps/jiayuan_dbproxy-partition.Tpo .deps/jiayuan_dbproxy-partition.Po
-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT jiayuan_dbproxy-sql-parser.o -MD -MP -MF .deps/jiayuan_dbproxy-sql-parser.Tpo -c -o jiayuan_dbproxy-sql-parser.o `test -f 'sql-parser.cpp' || echo './'`sql-parser.cpp
+mv -f .deps/xxfs_dbproxy-partition.Tpo .deps/xxfs_dbproxy-partition.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT xxfs_dbproxy-sql-parser.o -MD -MP -MF .deps/xxfs_dbproxy-sql-parser.Tpo -c -o xxfs_dbproxy-sql-parser.o `test -f 'sql-parser.cpp' || echo './'`sql-parser.cpp
 In file included from /usr/include/c++/4.8/ext/hash_map:60:0,
                  from perf_monitor.h:65,
                  from network-socket.h:42,
@@ -245,8 +245,8 @@ sql-parser.cpp: In member function ‘db_lookup_retval_t SqlParser::parseSql(std
 sql-parser.cpp:432:18: warning: variable ‘partitioned’ set but not used [-Wunused-but-set-variable]
              bool partitioned = false;
                   ^
-mv -f .deps/jiayuan_dbproxy-sql-parser.Tpo .deps/jiayuan_dbproxy-sql-parser.Po
-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT jiayuan_dbproxy-perf_monitor.o -MD -MP -MF .deps/jiayuan_dbproxy-perf_monitor.Tpo -c -o jiayuan_dbproxy-perf_monitor.o `test -f 'perf_monitor.cpp' || echo './'`perf_monitor.cpp
+mv -f .deps/xxfs_dbproxy-sql-parser.Tpo .deps/xxfs_dbproxy-sql-parser.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT xxfs_dbproxy-perf_monitor.o -MD -MP -MF .deps/xxfs_dbproxy-perf_monitor.Tpo -c -o xxfs_dbproxy-perf_monitor.o `test -f 'perf_monitor.cpp' || echo './'`perf_monitor.cpp
 In file included from /usr/include/c++/4.8/ext/hash_map:60:0,
                  from perf_monitor.h:65,
                  from perf_monitor.cpp:2:
@@ -262,10 +262,10 @@ perf_monitor.cpp:14:1: warning: deprecated conversion from string constant to �
 perf_monitor.cpp:14:1: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 perf_monitor.cpp:14:1: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
 perf_monitor.cpp:14:1: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
-mv -f .deps/jiayuan_dbproxy-perf_monitor.Tpo .deps/jiayuan_dbproxy-perf_monitor.Po
-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT jiayuan_dbproxy-messages.o -MD -MP -MF .deps/jiayuan_dbproxy-messages.Tpo -c -o jiayuan_dbproxy-messages.o `test -f 'messages.cpp' || echo './'`messages.cpp
-mv -f .deps/jiayuan_dbproxy-messages.Tpo .deps/jiayuan_dbproxy-messages.Po
-g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT jiayuan_dbproxy-resultset_merge.o -MD -MP -MF .deps/jiayuan_dbproxy-resultset_merge.Tpo -c -o jiayuan_dbproxy-resultset_merge.o `test -f 'resultset_merge.cpp' || echo './'`resultset_merge.cpp
+mv -f .deps/xxfs_dbproxy-perf_monitor.Tpo .deps/xxfs_dbproxy-perf_monitor.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT xxfs_dbproxy-messages.o -MD -MP -MF .deps/xxfs_dbproxy-messages.Tpo -c -o xxfs_dbproxy-messages.o `test -f 'messages.cpp' || echo './'`messages.cpp
+mv -f .deps/xxfs_dbproxy-messages.Tpo .deps/xxfs_dbproxy-messages.Po
+g++ -DHAVE_CONFIG_H -I. -I..  -I/usr/local/webserver/mysql/include -I/usr/local/include -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -I/usr/include/lua5.1    -Wall -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -D_LARGE_FILES  -g -O2 -MT xxfs_dbproxy-resultset_merge.o -MD -MP -MF .deps/xxfs_dbproxy-resultset_merge.Tpo -c -o xxfs_dbproxy-resultset_merge.o `test -f 'resultset_merge.cpp' || echo './'`resultset_merge.cpp
 In file included from /usr/include/c++/4.8/ext/hash_map:60:0,
                  from perf_monitor.h:65,
                  from network-socket.h:42,
@@ -300,5 +300,5 @@ resultset_merge.cpp:280:30: warning: suggest parentheses around ‘&&’ within 
 resultset_merge.cpp:282:30: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
        if(order_array[i].desc && diff[p]<0 || !order_array[i].desc && diff[p]>0)
                               ^
-mv -f .deps/jiayuan_dbproxy-resultset_merge.Tpo .deps/jiayuan_dbproxy-resultset_merge.Po
-g++  -g -O2   -o jiayuan_dbproxy jiayuan_dbproxy-jiayuan_dbproxy.o jiayuan_dbproxy-network-mysqld.o jiayuan_dbproxy-network-mysqld-proto.o jiayuan_dbproxy-network-mysqld-proxy.o jiayuan_dbproxy-network-mysqld-server.o jiayuan_dbproxy-network-mysqld-table.o jiayuan_dbproxy-network-conn-pool.o jiayuan_dbproxy-network-socket.o jiayuan_dbproxy-sql-tokenizer.o jiayuan_dbproxy-glib-ext.o jiayuan_dbproxy-mysql_wrapper.o jiayuan_dbproxy-partition.o jiayuan_dbproxy-sql-parser.o jiayuan_dbproxy-perf_monitor.o jiayuan_dbproxy-messages.o jiayuan_dbproxy-resultset_merge.o  -levent -lglib-2.0   -llua5.1    -L/usr/local/webserver/mysql/lib -lmysqlclient -lpthread -lm -ldl 
+mv -f .deps/xxfs_dbproxy-resultset_merge.Tpo .deps/xxfs_dbproxy-resultset_merge.Po
+g++  -g -O2   -o xxfs_dbproxy xxfs_dbproxy-xxfs_dbproxy.o xxfs_dbproxy-network-mysqld.o xxfs_dbproxy-network-mysqld-proto.o xxfs_dbproxy-network-mysqld-proxy.o xxfs_dbproxy-network-mysqld-server.o xxfs_dbproxy-network-mysqld-table.o xxfs_dbproxy-network-conn-pool.o xxfs_dbproxy-network-socket.o xxfs_dbproxy-sql-tokenizer.o xxfs_dbproxy-glib-ext.o xxfs_dbproxy-mysql_wrapper.o xxfs_dbproxy-partition.o xxfs_dbproxy-sql-parser.o xxfs_dbproxy-perf_monitor.o xxfs_dbproxy-messages.o xxfs_dbproxy-resultset_merge.o  -levent -lglib-2.0   -llua5.1    -L/usr/local/webserver/mysql/lib -lmysqlclient -lpthread -lm -ldl 
